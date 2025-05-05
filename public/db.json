@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "68190407a91520074e3b0b08",
+    "PassengerName": "Teja",
+    "Age": "21",
+    "Source": "Boston",
+    "Destination": "Newyork",
+    "TicketFare": "2212",
+    "PhoneNum": "2134"
+  }
+]

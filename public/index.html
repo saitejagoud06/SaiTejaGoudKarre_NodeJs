@@ -1,0 +1,450 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Sai Teja CV</title>
+    <style>
+        body{
+    background-color:#b5e2e2 ;
+}
+:root{
+
+    --main-radius: 5px;
+    --main-padding:5px;
+}
+
+.layout{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "profile_img header header header"
+    "Education edu1 edu2 edu3"
+    "Experience exp_1 exp_2 exp_3"
+    "projects project1 project2 project3"
+    "blogs blog_info blog_info blog_info"
+    "Contact footer footer footer";
+    grid-gap:0.8rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+    font-size: 1EM;
+    color: #fff;  
+}
+
+nav {
+    background: #cd757e;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: 4px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    align-items: center; /
+}
+
+nav a {
+    text-decoration: none;
+    padding: 9px 16px;
+    font-size: large;
+    ;
+}
+
+#profile_img{
+    background:#cd757e;
+    grid-area: profile_img;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    color:black;
+    align-items: center;
+}
+
+header{
+    background:#cd757e ;
+    grid-area: header;
+    color: black;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+header p{
+    font-size:larger;
+    color: #301ad5;
+    text-align:left;
+}
+header h2{
+    text-decoration:underline;
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+#Education {
+    grid-area: Education;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu1{
+    grid-area: edu1;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu1 p{
+    color:black;
+    text-align: center;
+}
+#edu2{
+    grid-area: edu2;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu2 p{
+    color:black;
+    text-align: center;
+}
+#edu3{
+    grid-area: edu3;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu3 p{
+    color:black;
+    text-align: center;
+}
+#Experience {
+    grid-area: Experience;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_1 {
+    grid-area:exp_1 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_1 p{
+    text-align: center;
+    color: black;
+}
+#exp_2 {
+    grid-area:exp_2 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_2 p{
+    text-align: center;
+    color: black;
+}
+#exp_3 {
+    grid-area:exp_3 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_3 p{
+    text-align: center;
+    color: black;
+}
+#projects {
+    grid-area: projects;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project1 {
+    grid-area:project1 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project1 p{
+    text-align: center;
+    color: black;
+}
+#project1 ul{
+    color: brown;
+}
+#project2 {
+    grid-area:project2 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project2 p{
+    text-align: center;
+    color: black;
+}
+#project2 ul{
+    color: brown;
+}
+
+#project3 {
+    grid-area:project3 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project3 p{
+    text-align: center;
+    color: black;
+}
+#project3 ul{
+    color: brown;
+}
+#blogs {
+    grid-area: blogs;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#blog_info{
+    background: #cd757e;
+    grid-area: blog_info;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Contact {
+    grid-area: Contact;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer{
+    grid-area: footer;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer img {
+    width: 60px; 
+    height: auto; 
+    margin: 20px;
+    
+    
+}
+
+@media only screen and (max-width: 500px){
+    .layout{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr
+                    1.2fr 1.2fr 1.2fr 1.2fr;
+                    justify-content: space-evenly;
+
+        grid-template-areas:
+        "nav"
+        "header"
+        
+        "edu1"
+        "edu2"
+        "edu3"
+        "exp_1"
+        "exp_2"
+        "exp_3"
+        "project1"
+        "project2"
+        "project3"
+        "blog_info"
+        "footer";
+
+        row-gap: 0.5rem ;
+    }
+    #profile_img
+    {
+        display: none;
+    }
+    #Education{
+        display: none;
+    }
+    #Experience{
+        display: none;
+    }
+    #projects{
+        display: none;
+    }
+    #blogs{
+        display: none;
+    }
+    #Contact{
+        display: none;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+<div class="layout">
+    <nav>
+        <a href="#about">About</a>
+        <a href="#Education">Education</a>
+        <a href="#Experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <div id="profile_img">
+        <img src="https://media.istockphoto.com/id/1393750072/vector/flat-white-icon-man-for-web-design-silhouette-flat-illustration-vector-illustration-stock.jpg?s=612x612&w=0&k=20&c=s9hO4SpyvrDIfELozPpiB_WtzQV9KhoMUP9R9gVohoU=" alt="Profile" width="150px">
+        <p><b>Name : </b>Sai Teja Goud Karre</p>
+        <p><b>Email: </b>saitejag@gmail.com</p>
+        
+    </div>
+    <header id="about">
+        <h2>About</h2>
+        <p>
+            Myself, Sai Teja Goud Karre, currently pursuing a Master's degree in Computer Science at the University of New Haven. Previously, 
+            I worked as a Data Engineer at Wells Fargo.I Have done my graduation in SRM University from the major computer science.
+             My areas of Intrest is Databases,Android,Java.</p>
+    </header>
+    <div id="Education">
+        <h2>Education</h2>
+    </div>
+    <div id="edu1">
+        <b >Masters</b>
+                <p><b>University : </b> University of New Haven</p>
+                <p><b>Major : </b> Computer Science</p>
+                <p><b>GPA : </b> 3.6</p>
+    </div>
+
+    <div id="edu2">
+        <b>Bachelors</b>
+            <p><b>University : </b> SRM University,Chennai</p>
+            <p><b>Major : </b> Computer Science</p>
+            <p><b>CGPA : </b> 8.5</p>
+    </div>
+
+    <div id="edu3">
+        <b>SSC</b>
+        <p><b>College : </b> Narayana School</p>
+        <p><b>Major : </b> SSC</p>
+        <p><b>CGPA : </b> 8.6</p>
+    </div>
+
+    <div id="Experience">
+        <h2>Experience</h2>
+    </div>
+    <section id="exp_1">
+        <b>Employer1</b>
+                    <p><b>Company : </b> Wells Fargo</p>
+                    <p><b>Title : </b> Intern-Data Engineer</p>
+                    <p><b>Location : </b> Hyderabad,India</p>
+                    <p><b>Technologies : </b> PowerBI,SQL,ETL</p>
+    </section>
+    <div id="exp_2">
+        <b>Employer2</b>
+        <p><b>Company : </b>  Wells Fargo</p>
+        <p><b>Title : </b> Data Engineer</p>
+        <p><b>Location : </b> Hyderabad,India</p>
+        <p><b>Technologies : </b> PowerBI,SQL,ETL</p>
+        </div>
+        <div id="exp_3">
+            <b>Employer3</b>
+            <p><b>Company : </b> OTIS</p>
+            <p><b>Title : </b> Intern-Data Analyst</p>
+            <p><b>Location : </b> Remote</p>
+            <p><b>Technologies : </b> PowerBI,Azure</p>
+            </div>
+
+            <div id="projects">
+                <h2>Projects</h2>
+            </div>
+           
+            <div id="project1">
+                <b>Project1</b>
+                <p> <b>Title:</b>Expense Tracker</p>
+            <ul>
+                <li>
+                    <b>Tools : </b>
+                    <ol type="1">
+                         <li>Android Development(kotlin)</li>
+                         <li>Fork</li>
+                         <li>GIT</li>
+                         
+                    </ol>
+                </li>
+                <li><b>Description : </b>
+                    Expense Tracker App is used to track our daily expenses and the amount spent and here we can set goals and set spending limits.</li>
+            </ul> 
+                </div>
+                <div id="project2">
+                    <b>Project2</b>
+                    <p> <b>Title:</b>Expense Tracker</p>
+            <ul>
+                <li>
+                    <b>Tools : </b>
+                    <ol type="1">
+                         <li>Android Development(kotlin)</li>
+                         <li>Fork</li>
+                         <li>GIT</li>
+                         
+                    </ol>
+                </li>
+                <li><b>Description : </b>
+                    Expense Tracker App is used to track our daily expenses and the amount spent and here we can set goals and set spending limits.</li>
+            </ul>
+                    </div>
+
+                    <div id="project3">
+                        <b>Project3</b>
+                        <p> <b>Title:</b>Expense Tracker</p>
+            <ul>
+                <li>
+                    <b>Tools : </b>
+                    <ol type="1">
+                         <li>Android Development(kotlin)</li>
+                         <li>Fork</li>
+                         <li>GIT</li>
+                         
+                    </ol>
+                </li>
+                <li><b>Description : </b>
+                    Expense Tracker App is used to track our daily expenses and the amount spent and here we can set goals and set spending limits.</li>
+            </ul>
+                        </div>
+                        <div id="blogs">
+                            <h2>Blogs</h2>
+                        </div>
+                        <div id="blog_info">
+                            
+                            <ul style="list-style-type:square;">
+                                <li><a href="https://www.pennypolly.com/blogging/blog-examples-for-students">https://www.pennypolly.com/blogging/blog-examples-for-students</a></li>
+                                <li><a href="https://building21.org/aurora-2024-insights-and-highlights/">https://building21.org/aurora-2024-insights-and-highlights/</a></li>
+                                <li><a href="https://dribbble.com/stories">https://dribbble.com/stories</a></li>
+                                
+                            
+                            </ul>
+                            
+                            
+                        </div>
+                        <div id="Contact">
+                            <h2>Social Media</h2>
+                        </div>
+                        <footer>
+                            <a href="https://www.google.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="google"></a>
+                            <a href="https://www.linkedin.com/feed//"><img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="linkedin"></a>
+                            <a href="https://twitter.com/i/flow/login"><img src="https://brandlogos.net/wp-content/uploads/2016/11/twitter-icon-square-logo-preview.png" alt="Twitter"></a>
+                            <a href="https://github.com/"><img src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/512/FontAwesome-Brands-Square-Github-icon.png" alt="Github"></a>
+                            
+                        </footer>
+                        </div>
+</div>
+</body>
+</html>

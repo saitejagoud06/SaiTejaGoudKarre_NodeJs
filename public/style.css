@@ -1,0 +1,282 @@
+body{
+    background-color:#b5e2e2 ;
+}
+:root{
+
+    --main-radius: 5px;
+    --main-padding:5px;
+}
+
+.layout{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "profile_img header header header"
+    "Education edu1 edu2 edu3"
+    "Experience exp_1 exp_2 exp_3"
+    "projects project1 project2 project3"
+    "blogs blog_info blog_info blog_info"
+    "Contact footer footer footer";
+    grid-gap:0.8rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+    font-size: 1EM;
+    color: #fff;  
+}
+
+nav {
+    background: #cd757e;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: 4px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    align-items: center; /
+}
+
+nav a {
+    text-decoration: none;
+    padding: 9px 16px;
+    font-size: large;
+    ;
+}
+
+#profile_img{
+    background:#cd757e;
+    grid-area: profile_img;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    color:black;
+    align-items: center;
+}
+
+header{
+    background:#cd757e ;
+    grid-area: header;
+    color: black;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+header p{
+    font-size:larger;
+    color: #301ad5;
+    text-align:left;
+}
+header h2{
+    text-decoration:underline;
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+#Education {
+    grid-area: Education;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu1{
+    grid-area: edu1;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu1 p{
+    color:black;
+    text-align: center;
+}
+#edu2{
+    grid-area: edu2;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu2 p{
+    color:black;
+    text-align: center;
+}
+#edu3{
+    grid-area: edu3;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#edu3 p{
+    color:black;
+    text-align: center;
+}
+#Experience {
+    grid-area: Experience;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_1 {
+    grid-area:exp_1 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_1 p{
+    text-align: center;
+    color: black;
+}
+#exp_2 {
+    grid-area:exp_2 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_2 p{
+    text-align: center;
+    color: black;
+}
+#exp_3 {
+    grid-area:exp_3 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#exp_3 p{
+    text-align: center;
+    color: black;
+}
+#projects {
+    grid-area: projects;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project1 {
+    grid-area:project1 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project1 p{
+    text-align: center;
+    color: black;
+}
+#project1 ul{
+    color: brown;
+}
+#project2 {
+    grid-area:project2 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project2 p{
+    text-align: center;
+    color: black;
+}
+#project2 ul{
+    color: brown;
+}
+
+#project3 {
+    grid-area:project3 ;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#project3 p{
+    text-align: center;
+    color: black;
+}
+#project3 ul{
+    color: brown;
+}
+#blogs {
+    grid-area: blogs;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#blog_info{
+    background: #cd757e;
+    grid-area: blog_info;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Contact {
+    grid-area: Contact;
+    background: #cd757e;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer{
+    grid-area: footer;
+    background: #cd757e;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer img {
+    width: 60px; 
+    height: auto; 
+    margin: 20px;
+    
+    
+}
+
+@media only screen and (max-width: 500px){
+    .layout{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr
+                    1.2fr 1.2fr 1.2fr 1.2fr;
+                    justify-content: space-evenly;
+
+        grid-template-areas:
+        "nav"
+        "header"
+        
+        "edu1"
+        "edu2"
+        "edu3"
+        "exp_1"
+        "exp_2"
+        "exp_3"
+        "project1"
+        "project2"
+        "project3"
+        "blog_info"
+        "footer";
+
+        row-gap: 0.5rem ;
+    }
+    #profile_img
+    {
+        display: none;
+    }
+    #Education{
+        display: none;
+    }
+    #Experience{
+        display: none;
+    }
+    #projects{
+        display: none;
+    }
+    #blogs{
+        display: none;
+    }
+    #Contact{
+        display: none;
+    }
+}
+
