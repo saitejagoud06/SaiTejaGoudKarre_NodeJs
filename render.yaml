@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sai-nodejs-app
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    branch: main
+    autoDeploy: true
